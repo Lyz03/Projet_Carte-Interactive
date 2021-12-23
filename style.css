@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: gray;
+}
+
+h1 {
+    font-family: 'Qwitcher Grypen', sans-serif;
+    text-align: center;
+    font-size: 5rem;
+}
+
+section {
+    display: flex;
+    background-color: #f8f8f8;
+    margin: 2rem;
+    padding: 1rem 2rem;
+    border-left: 5px solid #afdbcb;
+}
+
+section div {
+    padding: 1rem;
+}
+
+iframe {
+    width: 70%;
+}
+
+p {
+    display: inline-block;
+    text-align: justify;
+}
+
+#right {
+    border-left: none;
+    border-right: 5px solid #afdbcb;
+}
+
+#right div {
+    text-align: right;
+    max-width: 100%;
+}
+
+/*
+ * animation
+ */
+.typing_animation {
+    display: inline-block;
+    width: 100%;
+    animation: typing 4s steps(200) 200ms;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+/*
+ * responsive
+ */
+@media screen and (max-width: 650px) {
+    section {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #right div {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    section {
+        margin: 1rem 0;
+    }
+    iframe {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section {
+        padding: 0.5rem;
+    }
+}
+
